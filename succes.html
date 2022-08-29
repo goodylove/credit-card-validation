@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>succesful</title>
+    <style>
+      .page-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+      }
+      .success-wrapper {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+      }
+      .suc-con {
+        width: 50%;
+        background: whitesmoke;
+        height: 222px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 1px 1px 1px rgb(238, 232, 232),
+          -1px -1px 1px rgb(248, 246, 246);
+        animation: 1s spin steps(12) forwards;
+      }
+      @keyframes spin {
+        0% {
+          transform: scale(0.1);
+        }
+        80% {
+          transform: scale(0.7);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .suc-con h1 {
+        font-size: 20px;
+      }
+      #button {
+        width: 40%;
+        height: 32px;
+        border: none;
+        border-radius: 5px;
+        background: rgb(92, 92, 250);
+        color: white;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="success-wrapper">
+        <div class="suc-con">
+          <svg
+            width="80"
+            height="80"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="40" cy="40" r="40" fill="url(#a)" />
+            <path d="M28 39.92 36.08 48l16-16" stroke="#fff" stroke-width="3" />
+            <defs>
+              <linearGradient
+                id="a"
+                x1="-23.014"
+                y1="11.507"
+                x2="0"
+                y2="91.507"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stop-color="green" />
+                <stop offset="1" stop-color="green" />
+              </linearGradient>
+            </defs>
+          </svg>
+          <h1>successful</h1>
+          <input type="button" name="" id="button" value="OK" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

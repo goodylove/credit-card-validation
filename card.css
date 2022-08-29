@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+.page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0 auto auto;
+}
+.card-container {
+  margin: 120px auto;
+  position: relative;
+  width: 424px;
+  height: 423px;
+  background-color: rgb(234, 233, 233);
+  border-radius: 10px;
+  padding: 10px;
+}
+.card-number {
+  display: flex;
+  flex-direction: column;
+}
+.card-number input {
+  outline: 0;
+  width: 24%;
+  height: 40px;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 7px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 1px grey, -1px -1px 1px grey;
+}
+.card-number-input {
+  display: flex;
+}
+label {
+  padding: 5px;
+}
+.card-holder {
+  display: flex;
+  flex-direction: column;
+}
+.num-con {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 3px;
+  width: 95%;
+}
+.card-holder input {
+  padding: 5px;
+  outline: 0;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 1px grey, -1px -1px 1px grey;
+}
+.expiraton-date {
+  display: flex;
+  justify-content: space-between;
+}
+.expire {
+  display: flex;
+}
+
+.overal-exp-con {
+  width: 100%;
+}
+.expiraton-date input {
+  width: 90%;
+  padding: 5px;
+  outline: 0;
+  height: 40px;
+  border-radius: 7px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 1px grey, -1px -1px 1px grey;
+}
+.card-holder-wrapper {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  color: white;
+}
+.card-holder-name {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 17px 35px;
+}
+.cvv {
+  display: flex;
+  flex-direction: column;
+}
+select {
+  outline: 0;
+  background-color: white;
+  height: 38px;
+  width: 91px;
+  margin: 5px;
+  border-radius: 7px;
+  border: 1px solid grey;
+  box-shadow: 1px 1px 1px grey, -1px -1px 1px grey;
+}
+.submit-con {
+  width: 100%;
+  padding: 10px;
+}
+.submit-con input {
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  outline: 0 !important;
+  width: 100%;
+  height: 48px;
+  font-size: 20px;
+  font-weight: 500;
+  background: linear-gradient(180deg, #49a09b, #3d8291);
+}
+.front,
+.back {
+  background: linear-gradient(135deg, #bd6772, #53223f);
+  box-shadow: 0 1px 6px #bd6772;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: 0.7s;
+  /* transform: rotateY(180deg); */
+}
+.card-box {
+  width: 335px;
+  height: 211px;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: -58px;
+  left: 36px;
+  /* transform-style: preserve-3d; */
+}
+.three-digit {
+  background: white;
+  height: 22px;
+  margin: 4px 0;
+}
+.three-git {
+  width: 247px;
+  height: 30px;
+  background: rgb(223, 214, 214);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.three-digit-wrapper {
+  /* background: wheat; */
+  width: 95%;
+  padding: 5px 5px;
+  display: flex;
+
+  height: 35px;
+}
+.black-one {
+  height: 45px;
+  width: 99%;
+  background: black;
+  border-radius: 2px;
+  padding: 10px;
+  margin: 10px auto;
+}
+
+.checkout-container {
+  position: absolute;
+  top: -20px;
+}
+.all-con-wrap {
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
+.card-express {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  width: 100%;
+}
+.chip-img {
+  width: 50px;
+  height: 50px;
+}
+.num-con-wrapper {
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  height: 21%;
+  align-items: center;
+  color: aliceblue;
+}
+.card-express-wrapper {
+  height: 10%;
+  display: flex;
+  align-items: end;
+}
+.master-img {
+  width: 104px;
+  height: 50px;
+}
+.valid input {
+  border: 2px solid green;
+}
+/* .isvalid {
+   border: 2px solid rgb(73, 226, 73);
+ }
+ .valid {
+   border: 2px solid red;
+ } */
+.img-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  padding: 5px;
+}
+.front {
+  font-size: small;
+  z-index: 2;
+  backface-visibility: hidden;
+}
+.back {
+  z-index: 0;
+  backface-visibility: hidden;
+}
+.text-wrapper {
+  width: 100%;
+  font-size: 7px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chip-text {
+  height: 53px;
+  width: 63px;
+  background: gray;
+  border-radius: 10px;
+}
+.text {
+  width: 77%;
+  padding: 6px 10px;
+}
+
+.card-box:hover .front {
+  transform: rotateY(180deg);
+}
+
+.card-box .back {
+  transform: rotateY(180deg);
+}
+.card-box:hover .back {
+  transform: rotateY(0deg);
+}
+.ex-date-wrapper {
+  display: flex;
+  justify-content: end;
+  align-content: center;
+  font-size: 14px;
+  padding: 0 10px;
+  color: #fff;
+}
+.m-d {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

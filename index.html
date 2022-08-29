@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>personal info</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img src="./img/logo2.png" alt="" class="img-nav" />
+      </div>
+      <div class="menu">
+        <ul class="unlist">
+          <li>Home</li>
+          <li>Contact</li>
+          <li>About</li>
+          <li>FQA</li>
+        </ul>
+      </div>
+    </nav>
+    <div class="page-container">
+      <div class="form-container">
+        <div class="personal-wrapper">
+          <div class="person">PERSONAL DETAILS</div>
+          <div class="page-num">1/3</div>
+        </div>
+        <div class="name-wrapper">
+          <div class="first-name">
+            <label for="first name">First Name*</label>
+            <input type="text" id="name" />
+          </div>
+          <div class="last-name">
+            <label for="first name">Last Name*</label>
+            <input type="text" id="l-name" />
+          </div>
+        </div>
+        <div class="email-wrapper">
+          <div class="email">
+            <label for="Email">Email*</label>
+            <input type="email" id="email" />
+            <div id="error"></div>
+          </div>
+          <div class="confirm-email">
+            <label for="Confirm Email">Confirm Email*</label>
+            <input type="email" id="email1" />
+            <div id="error1"></div>
+          </div>
+        </div>
+        <div class="country-wrapper">
+          <div class="country-code">
+            <label for="country code">country code</label>
+            <input type="text" id="country-code" />
+          </div>
+          <div class="tel">
+            <label for="tel">tel:</label>
+            <input type="text" id="tel" />
+          </div>
+        </div>
+        <div class="national-zip-wrapper">
+          <div class="national">
+            <label for="nationality">Nationality</label>
+            <select name="country" id="select-country">
+              <option value="CHINA">CHINA</option>
+              <option value="JAPAN">JAPAN</option>
+              <option value="NIGERIA">NIGERIA</option>
+              <option value="USA">USA</option>
+              <option value="ge">GERMAMY</option>
+              <option value="">TOGO</option>
+            </select>
+          </div>
+          <div class="zip">
+            <label for="ZIP CODE">Zip Code</label>
+            <input type="text" id="zip" />
+          </div>
+        </div>
+        <div class="dob">
+          <label for="date of birth">Date Of Birth</label>
+          <input type="date" id="dob" />
+        </div>
+        <div class="btn-wrapper">
+          <a href="./index2.html">
+            <button id="btn">next</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

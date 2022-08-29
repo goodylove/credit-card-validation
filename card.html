@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+    <link rel="stylesheet" href="card.css" />
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="card-container">
+        <div class="checkout-container">
+          <div class="card-box">
+            <div class="front">
+              <div class="img-con">
+                <div class="chip">
+                  <img src="./img/chip.png" class="chip-img" />
+                </div>
+                <div class="visa-master-verve">
+                  <img src="./img/mastercard.png" class="master-img" />
+                </div>
+              </div>
+              <div class="num-con-wrapper">
+                <div class="num-con">
+                  <h4 class="numdisplay1"></h4>
+                  <h4 class="numdisplay2"></h4>
+                  <h4 class="numdisplay3"></h4>
+                  <h4 class="numdisplay4"></h4>
+                </div>
+              </div>
+              <div class="card-express-wrapper">
+                <div class="card-express">
+                  <div class="card-num">CARD NUMBER</div>
+                  <div class="expres">EXPRESS</div>
+                </div>
+              </div>
+              <div class="card-holder-wrapper">
+                <div class="card-holder-name">
+                  <div class="card-name"></div>
+                </div>
+              </div>
+              <div class="ex-date-wrapper">
+                <div class="ex-date">
+                  <div class="lab">
+                    <label for="month">MONTH/YEAR</label>
+                    <!-- <label for="year">year</label> -->
+                  </div>
+                  <div class="m-d">
+                    <span class="mon"></span>/
+                    <span class="year"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="black-one"></div>
+              <div class="authorized">
+                <p style="font-size: 9px; color: white; padding: 0px 20px">
+                  AUTHORIZED SIGNATURE NOT VALID UNLESS SIGNED
+                </p>
+              </div>
+              <div class="three-digit-wrapper">
+                <div class="three-git"></div>
+                <div class="three-digit">345</div>
+              </div>
+              <div class="text-wrapper">
+                <div class="chip-text"></div>
+                <div class="text">
+                  <div class="text-one">
+                    <p>
+                      By using this card the holder agrees to all the terms and
+                      conditions under whhich it was issued
+                    </p>
+                    <p>
+                      this card is issued by Lorem Bank pursuant to a license
+                      from Visa intertional seravice Association.
+                    </p>
+                    <p>
+                      it remains the property of the issuer and mustbe returned
+                      upon request
+                    </p>
+                    <div class="text-two">
+                      <p>LOREM BANK PLC, 24 Hours Customer services</p>
+                      <p>Tel:+234 134 658 378</p>
+                      <p>Email:cardservice@lorembank.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="all-con-wrap">
+          <div class="all-con">
+            <div class="card-number">
+              <label for="card number"> Card Number</label>
+              <div class="card-number-input">
+                <input
+                  type="text"
+                  maxlength="4"
+                  class="number1 ccnum all-input"
+                />
+                <input
+                  type="text"
+                  maxlength="4"
+                  class="number2 ccnum all-input"
+                />
+                <input
+                  type="text"
+                  maxlength="4"
+                  class="number3 ccnum all-input"
+                />
+                <input
+                  type="text"
+                  maxlength="4"
+                  class="number4 ccnum all-input"
+                />
+              </div>
+            </div>
+            <div class="card-holder">
+              <label for="Card holder">Card Holder</label>
+              <input type="text" class="name-card all-input" />
+            </div>
+            <div class="expiraton-date">
+              <div class="overal-exp-con">
+                <label for="expiration date">Expiration Date</label>
+                <div class="expire">
+                  <div class="select">
+                    <select id="card-expiration-month">
+                      <option></option>
+                      <option>01</option>
+                      <option>02</option>
+                      <option>03</option>
+                      <option>04</option>
+                      <option>05</option>
+                      <option>06</option>
+                      <option>07</option>
+                      <option>08</option>
+                      <option>09</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                  </div>
+                  <div class="select">
+                    <select id="card-expiration-year">
+                      <option></option>
+                      <option>2016</option>
+                      <option>2017</option>
+                      <option>2018</option>
+                      <option>2019</option>
+                      <option>2020</option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="cvv">
+                <label for="CVV">Cvv</label>
+                <input type="text" class="cvv-input all-input" maxlength="3" />
+              </div>
+            </div>
+            <div class="submit-con">
+              <input type="submit" value="submit" class="submit" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="card.js"></script>
+  </body>
+</html>
