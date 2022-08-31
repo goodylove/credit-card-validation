@@ -262,12 +262,12 @@ select {
 .card-box:hover .front {
   transform: rotateY(180deg);
 }
+.card-box:hover .back {
+  transform: rotateY(0deg);
+}
 
 .card-box .back {
   transform: rotateY(180deg);
-}
-.card-box:hover .back {
-  transform: rotateY(0deg);
 }
 .ex-date-wrapper {
   display: flex;

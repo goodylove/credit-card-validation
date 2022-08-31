@@ -101,6 +101,11 @@ function showNumber(inputNum1, displayNum) {
     } else removeBorderStyleForInputs();
   });
 }
+showNumber(inputNum1, numDisplay1);
+showNumber(inputNum2, numDisplay2);
+showNumber(inputNum3, numDisplay3);
+showNumber(inputNum4, numDisplay4);
+
 function removeBorderStyleForInputs() {
   if (isValidCard) {
     cardInput.forEach((input) => {
@@ -109,10 +114,6 @@ function removeBorderStyleForInputs() {
   }
 }
 
-showNumber(inputNum1, numDisplay1);
-showNumber(inputNum2, numDisplay2);
-showNumber(inputNum3, numDisplay3);
-showNumber(inputNum4, numDisplay4);
 function isActivated(inputNum1, displayNum) {
   let num1;
   inputNum1.addEventListener("keyup", (e) => {
@@ -179,10 +180,21 @@ const sumbitButton = document.querySelector(".submit");
 
 sumbitButton.addEventListener("click", (e) => {
   e.preventDefault();
-  allInput.forEach((input) => {
-    if (input.value === "") window.location.href = "";
-    else if (validateCredit_card(confirmNum) === false) {
-      alert("invalid number");
+
+  if (validateCredit_card(confirmNum) === false) {
+    alert("invalid CARD number");
+  } else {
+    const foundAnEmptyInput = [...allInput].find((input) => {
+      return input.value === "";
+    });
+
+    if (foundAnEmptyInput) {
+      alert("fill the box");
     } else window.location.href = "./succes.html";
+  }
+  allInput.forEach((input) => {
+    input.value = "";
   });
+  cardExpYear.value = "";
+  cardExpMonth.value = "";
 });
