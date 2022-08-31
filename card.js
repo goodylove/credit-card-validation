@@ -197,4 +197,11 @@ sumbitButton.addEventListener("click", (e) => {
   });
   cardExpYear.value = "";
   cardExpMonth.value = "";
+  month.value = "";
+  year.value = "";
+  frontCardHolder.value = "";
+  numDisplay1.value = "";
+  numDisplay2.value = "";
+  numDisplay3.value = "";
+  numDisplay4.value = "";
 });
